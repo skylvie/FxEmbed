@@ -1,0 +1,13 @@
+name = "fixtweet"
+account_id = "526eaaee09a0700e2c4bb5d7ec1fc1d7"
+main = "./dist/worker.js"
+compatibility_date = "2024-11-14"
+send_metrics = false
+
+# Remove this if not using elongator account proxying
+services = [
+  { binding = "TwitterProxy", service = "elongator" }
+]
+
+[build]
+command = "npm run build"
